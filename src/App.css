@@ -1,0 +1,44 @@
+/* App 컨테이너 전체에 대한 스타일 */
+.App {
+  text-align: center;
+}
+
+/* 로고에 대한 스타일 */
+.App-logo {
+  height: 40vmin;  /* 로고의 크기를 뷰포트에 맞춰 조정 */
+  pointer-events: none;  /* 로고에 마우스 이벤트 발생하지 않도록 설정 */
+}
+
+/* 움직임을 선호하는 사용자를 위한 애니메이션 */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;  /* 로고가 무한히 회전 */
+  }
+}
+
+/* 앱 헤더 스타일 */
+.App-header {
+  background-color: #282c34;  /* 배경색 설정 */
+  min-height: 100vh;  /* 최소 높이를 뷰포트 높이의 100%로 설정 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);  /* 폰트 크기를 뷰포트에 따라 조정 */
+  color: white;  /* 글자색 설정 */
+}
+
+/* 앱 링크 스타일 */
+.App-link {
+  color: #61dafb;  /* 링크 색상 설정 */
+}
+
+/* 로고 회전 애니메이션 키 프레임 */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);  /* 회전 시작 각도 */
+  }
+  to {
+    transform: rotate(360deg);  /* 회전 종료 각도 */
+  }
+}
